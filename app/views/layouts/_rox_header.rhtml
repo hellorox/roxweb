@@ -1,0 +1,11 @@
+<a href="/home"><div id="rox_icon"></div></a>	
+<div class="nav_bar">
+	<ul>
+		<% page = params[:controller] %>
+		<li <% if page == 'draw'%> id="current_page" <% end %>><a href="/draw"><img src="/images/nav_draw.png" /></a></li>
+		<li <% if page == 'paint'%> id="current_page" <% end %>><a href="/paint"><img src="/images/nav_paint.png" /></a></li>
+		<li <% if page == 'sculpture'%> id="current_page" <% end %>><a href="/sculpture"><img src="/images/nav_sculpture.png" /></a></li>
+		<li <% if page == 'info'%> id="current_page" <% end %>><a href="/info"><img src="/images/nav_info.png" /></a></li>
+	</ul>
+</div>
+
