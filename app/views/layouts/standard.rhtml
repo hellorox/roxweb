@@ -3,21 +3,17 @@
 <body>
 <div id="centering">
 	<%= render :partial => "layouts/rox_header" %>
-	<div id="right_nav">
-		<% page = params[:controller] %>
-		<% if page == 'draw'%> <%= render :partial => 'draw/menu_draw' %><% end %>
-		<% if page == 'paint'%> <%= render :partial => 'paint/menu_paint' %><% end %>
-		<% if page == 'sculpture'%> <%= render :partial => 'sculpture/menu_sculpture' %><% end %>
-		<% if page == 'info'%> <%= render :partial => 'info/menu_info' %><% end %>		
-	</div>	
 
-	<div id="content">
-	<%= yield %>
-	</div>
-	<div id="footer"></div>
+
+	<div id="container">
+		<%= yield %>
+	</div>	
+	
 
 
 </div>
+<div id="footer">
 <%= render :partial => "layouts/tracking" %>
+</div>
 </body>
 </html>	
